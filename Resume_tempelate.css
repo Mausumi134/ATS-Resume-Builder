@@ -1,0 +1,77 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"); */
+body{
+    margin:10px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    background-color: rgba(220, 246, 246, 0.721);
+    text-align: center;
+}
+.logo{
+    height: 20px;
+    width: 40px;
+    float: left;
+}
+
+.language {
+    margin-bottom: 20px;
+}
+
+#languageSelect {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+#languageSelect:hover {
+    background-color: #ebebeb;
+}
+
+#languageSelect:focus {
+    border-color: #5a5a5a;
+}
+.slider_container{
+    width:100%;
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.slider-images{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.slider-images img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:6px;
+}
+.slider-img{
+    width: 140px;
+    border-radius: 6px;
+    cursor: pointer;
+    position:relative;
+    transition: 0.7s ease;
+}
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+    height:300px;
+}
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+    height:400px;
+}
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(5),.slider-images .slider-img:nth-child(4){
+    height:500px;
+}
+
+.slider-img.active{
+    width: 400px !important;
+    height: 600px !important;
+    border:3px solid rgb(36, 36, 42);
+}
+

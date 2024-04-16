@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+.welcome-heading {
+    color: white;
+    margin-left: 35%;
+  
+    font-size: xx-large; /* Larger font size */
+    font-family: Arial, sans-serif; /* Font family */
+    font-weight: bold; /* Font weight */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.auth-form {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.auth-form h2 {
+    margin-top: 0;
+}
+
+.auth-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(38, 215, 18);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: rgb(38, 215, 18);
+}
+
+.hidden {
+    display: none;
+}

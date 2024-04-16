@@ -1,0 +1,361 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style: none;
+     box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background-color: #000;
+}
+/* nav start */
+    nav {
+        height: 80px;
+        width: 100%;
+        background: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    label.logo {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(48, 215, 18);
+        line-height: 40px;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        margin: 0 8px;
+    }
+    
+    nav a {
+        color:  rgb(48, 215, 18);
+        text-decoration: none;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 7px 10px;
+        border-radius: 3px;
+    }
+    
+    a.active, a:hover {
+        background-color:  rgb(48, 215, 18);
+        color: white;
+        transition: 0.5s;
+    }
+    
+    nav #icon {
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+    } 
+    @media (max-width: 909px) {
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            width: 100%;
+            background: #2f3640;
+            padding: 20px 0;
+            transition:all .5s;
+            text-align: center;
+        }
+        
+        nav ul.show {
+            display: flex;
+            left: 0;
+        }
+        
+        nav li {
+            margin: 10px 0;
+        }
+        
+        nav #icon {
+            display: block;
+        }
+          nav a{
+    font-size: 20px;
+    }
+        a.active,a:hover{
+        border:none;
+        color:#3498db;
+    } 
+    }
+    
+
+/* top nav end */
+
+
+.heading-section {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.paragraph-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.bottom-section {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 30px;
+    height: 400px;
+    background-color: rgb(38, 215, 18);
+    border-radius: 20px; /* Rounded corners */
+}
+
+.bottom-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 5000px; /* This width seems excessive, consider removing it or adjusting it to match your design */
+    height: 300px; /* This height doesn't have any effect if the content overflows, consider removing it */
+    padding-top: 80px;
+}
+
+.bottom-section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.bottom-section .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-section p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.create-resume-btn {
+    background-color: white; /* Button background color */
+    color: rgb(48, 215, 18); /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Cursor style on hover */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.create-resume-btn:hover {
+    background-color: rgb(14, 86, 186); 
+    color: white;
+}
+
+
+
+
+
+
+
+.box {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    color: white;
+    height: 300px;
+}
+
+.leftbox,
+.middle1box,
+.middle2box,
+.rightbox {
+    text-align: center;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 20px; /* Add padding for content spacing */
+    background-color: rgb(48, 215, 18);
+}
+
+.leftbox img,
+.middle1box img,
+.middle2box img,
+.rightbox img {
+    max-width: 100%; 
+    border-radius: 15px; 
+}
+
+.paragraph-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+.flex-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .boxi {
+   color: rgb(38, 215, 18);
+    margin: 20px;
+    padding: 80px;
+    font-size: larger;
+  }
+
+
+
+
+.resume-score {
+margin-top:50px;
+color: rgb(38, 215, 18);
+    text-align: center;
+    height: 300px;
+   
+   
+}
+
+
+
+.resume-score h2 {
+    color:#fff;
+    margin-bottom: 10px; 
+    padding-top: 120px;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+.round-button {
+    border-radius: 50px; /* Make it round */
+    background-color: white; /* White background */
+    color: violet; /* Violet text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.round-button:hover {
+    background-color: violet; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+/* typing text  */
+.container1{
+width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+}
+.typingtext{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 10%;
+    font-size:20px;
+    letter-spacing: 0.5px;
+    line-height:20px;
+    text-align: center;
+}
+.typingtext h1{
+    font-size: 75px;
+    line-height: 100px;
+}
+.typingtext a {
+    margin-top:60px;
+    display:inline-block;
+    border-radius: 6px;
+    border: 3px solid #464519;
+    color:#2980b9;
+    padding: 15px 30px;
+    text-decoration:none;
+}
+.typingtext #btns:hover{
+    background:#7ec6f7;
+    color:#000;
+    transform: scale(1.02);
+}
+.container1 .img4{
+    margin-top: 3%;
+
+}
+
+
+
+/* footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-section {
+    width: 30%;
+    margin-left: 20%;
+}
+
+.footer-section h2 {
+    color:rgb(38, 215, 18);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ccc;
+    
+}
+
+
+  
+  
+  

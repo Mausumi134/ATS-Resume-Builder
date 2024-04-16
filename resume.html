@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="resume.css">
+    
+</head>
+<body>
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2">Resume Generator</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="namefield">Your Name</label>
+                    <input type="text" id="namefield" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="emailField">Email Address</label>
+                    <input type="email" id="emailField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="phoneField">Phone Number</label>
+                    <input type="tel" id="phoneField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="addressField">Address</label>
+                    <textarea 
+                        id="addressField" 
+                        placeholder="Enter here" 
+                        class="form-control"
+                        rows="5">
+                    </textarea>
+                </div>
+                <p class="text-secondary mt-3">Important Links</p>
+                <div class="form-group mt-2">
+                    <label for="linkedinField">LinkedIn</label>
+                    <input type="url" id="linkedinField" placeholder="Enter LinkedIn profile link" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="githubField">GitHub</label>
+                    <input type="url" id="githubField" placeholder="Enter GitHub profile link" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Professional Information</h3>
+                <div class="form-group mt-2">
+                    <label for="summaryField">Summary</label>
+                    <textarea 
+                        id="summaryField" 
+                        placeholder="Enter summary here" 
+                        class="form-control"
+                        rows="3">
+                    </textarea>
+                </div>
+
+
+                <div class="form-group mt-2" id="we">
+                    <label for="projectsField">Projects</label>
+                    <textarea 
+                        id="projectsField" 
+                        placeholder="Enter projects here" 
+                        class="form-control wefield"
+                        >
+                    </textarea>
+                    <div class="container text-center mt-2" id="webtn">
+                        <button class="btn btn-primary btn-sm" onclick="addNew()">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="we">
+                    <label for="educationField">Education</label>
+                    <textarea 
+                        id="educationField" 
+                        placeholder="Enter education here" 
+                        class="form-control wefield"
+                       >
+                    </textarea>
+                    <div class="container text-center mt-2 " id="webtn">
+                        <button class="btn btn-primary btn-sm" onclick="addEducation()">Add</button>
+                    </div>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="certificationsField">Certifications</label>
+                    <textarea 
+                        id="certificationsField" 
+                        placeholder="Enter certifications here" 
+                        class="form-control"
+                     >
+                    </textarea>
+                    <div class="container text-center mt-2" id="webtn">
+                        <button class="btn btn-primary btn-sm" onclick="addCertifications()">Add</button>
+                    </div>
+                </div>
+            
+                <div class="form-group mt-2">
+                    <label for="skillsField">Skills</label>
+                    <textarea 
+                        id="skillsField" 
+                        placeholder="Enter skills here" 
+                        class="form-control"
+                        >
+                    </textarea>
+                    <div class="container text-center mt-2" id="webtn">
+                        <button class="btn btn-primary btn-sm" onclick="addSkills()">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-2">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button> 
+        </div>
+    </div>
+  
+
+    
+
+
+    <div class="container" id="cv-template">
+        <div class="header" style="text-align: center;">
+            <h1 id="nameT">John Doe</h1>
+            <p id="emailT">Email: john.doe@example.com</p>
+            <p id="phoneT">Phone: (555) 555-5555</p>
+            <p id="addressT">Address: 543782/64526 34,Punjab INDIA</p>
+            <p id="linkT">LinkedIn: linkedin.com/in/johndoe</p>
+            <p id="gitT">GitHub: github.com/johndoe</p>
+            <hr style="margin-top: 20px; margin-bottom: 20px;">
+        </div>
+        
+        <div class="summary" style="text-align: left;">
+            <h2>Summary</h2>
+            <p id="summaryT">A highly motivated and detail-oriented professional with 5+ years of experience...</p>
+            <hr style="margin-top: 20px; margin-bottom: 20px;">
+        </div>
+
+        <div class="projects" style="text-align: left;">
+            <h2>Projects</h2>
+            <ul id="projectT"  style="list-style-type: none; padding-left: 0; list-style-type: disc;">
+                <!-- Projects will be dynamically added here -->
+            </ul>
+            <hr style="margin-top: 20px; margin-bottom: 20px;">
+        </div>
+
+        <div class="education" style="text-align: left;">
+            <h2>Education</h2>
+            <ul id="educationT"  style="list-style-type: none; padding-left: 0;">
+                <!-- Education will be dynamically added here -->
+            </ul>
+            <hr style="margin-top: 20px; margin-bottom: 20px;">
+        </div>
+
+        <div class="certifications" style="text-align: left;">
+            <h2>Certifications</h2>
+            <ul id="certificationsT"  style="list-style-type: none; padding-left: 0;">
+                <!-- Certifications will be dynamically added here -->
+            </ul>
+            <hr style="margin-top: 20px; margin-bottom: 20px;">
+        </div>
+
+        <div class="skills" style="text-align: left;">
+            <h2>Skills</h2>
+            <ul id="skillsT"  style="list-style-type: none; padding-left: 0;">
+                <!-- Skills will be dynamically added here -->
+            </ul>
+           
+        </div>
+        <div class="container mt-3 text-center">
+            <button onclick="printCV()" class="btn btn-primary btn-lg" id="print">Print CV</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js" integrity="sha512-QmHfFem9aVqq2m/DUS9cJqmbNQa5jI4wfrZ3fS5vF98b9K5s9kBCP+TCdUscwRKZ/QV1w6Ea8m/7Fc9IMxY23g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="resume.js"></script>
+</body>
+</html>

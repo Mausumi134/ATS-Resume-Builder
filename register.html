@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h1 class="welcome-heading">WELCOME TO RESUME BUILDER</h1>
+    <div class="container">
+        <div id="signup-form" class="auth-form">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" id="fullname" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html" id="login-link">Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Retrieve values from the form
+            var fullName = document.getElementById("fullname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            
+            // Basic validation
+            if(fullName.trim() === "" || email.trim() === "" || password.trim() === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            // Password length validation
+            if(password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return;
+            }
+
+            // Password case validation
+            if(!/[a-z]/.test(password) || !/[A-Z]/.test(password)) {
+                alert("Password must contain both upper and lower case characters.");
+                return;
+            }
+
+            // Here you would typically send a request to your server for registration
+            // For client-side demonstration, let's just redirect to the login page
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
+

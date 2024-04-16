@@ -1,0 +1,37 @@
+/* resume.css */
+
+.header {
+    text-align: center;
+}
+
+#nameT {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#emailT, #phoneT, #addressT {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#linkT, #gitT {
+    color: #007bff;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.summary h2, .projects h2, .education h2, .certifications h2, .skills h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#summaryT, #projectT, #educationT, #certificationsT, #skillsT {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
