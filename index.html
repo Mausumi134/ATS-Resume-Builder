@@ -57,28 +57,28 @@
 
 <div class="box">
     <div class="leftbox">
-        <img src="logo3.jpg">
+        <img src="b.png" height="50px">
         <center><h2 class="first">Online Resume Builder</h2></center>
         <div class="paragraph-center">
             <p class="first1">Create professional resumes quickly and easily with our online resume builder. Our intuitive interface guides you through the process, ensuring your resume stands out.</p>
         </div>
     </div>
     <div class="middle1box">
-        <img src="logo1.jpg">
+        <img src="d.png" height="50px">
         <center><h2 class="first">AI Engine</h2></center>
         <div class="paragraph-center">
             <p class="first1">Leverage the power of artificial intelligence to optimize your resume for the job you want. Our AI engine analyzes your skills and experiences to tailor your resume for maximum impact.</p>
         </div>
     </div>
     <div class="middle2box">
-        <img src="logo4.jpg">
+        <img src="c.png" height="50px">
         <center><h2 class="first">Designed Templates</h2></center>
         <div class="paragraph-center">
             <p class="first1">Choose from a wide range of professionally designed templates to showcase your unique skills and experiences. Stand out from the crowd with a visually appealing resume.</p>
         </div>
     </div>
     <div class="rightbox">
-        <img src="logo2.jpg">
+        <img src="a.png" height="50px">
         <center><h2 class="first">Approved by Recruiters</h2></center>
         <div class="paragraph-center">
             <p class="first1">Our resumes are vetted and approved by recruiters, ensuring they meet industry standards and increase your chances of getting noticed by hiring managers.</p>
@@ -175,6 +175,24 @@
     &copy; resumebuilder.com | Designed by Mausumi Ghadei/Kriti
 </div>
 
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
 
+<script>
+    var typed = new Typed(".auto-input",{
+        strings:["Resume Builder"],
+        typeSpeed:100,
+        loop: false
+    })
+document.addEventListener('DOMContentLoaded', function() {
+    var icon = document.getElementById('icon');
+    icon.addEventListener('click', function() {
+        var menu = document.querySelector('ul');
+        menu.classList.toggle('show');
+    });
+});
+
+
+</script>
 </body>
 </html>
