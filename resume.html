@@ -9,6 +9,25 @@
     
 </head>
 <body>
+    <nav id="nav">
+        <label class="logo"><i class="fas fa-file-alt"></i> Resume Builder</label>
+        <ul>
+            
+            <li><a  href="index.html">Home</a></li>
+            <li><a  href="example.html">Resume Template</a></li>
+            <li><a  href="resume_example.html">About</a></li>
+            <li><a href="upload.html">Resume Scores</a></li>
+            <li><a href="template/index.html">Resume Builder</a></li>
+            <li><a class="active" href="resume.html">Create My Resume</a></li>
+            <li><a href="login.html">Log In/Sign Up</a></li>
+            
+        </ul>
+        <label id="icon"><i class="fas fa-bars"></i></label>
+    </nav> 
+
+
+
+
     <div class="container" id="cv-form">
         <h1 class="text-center my-2">Resume Generator</h1>
         <div class="row">
@@ -66,9 +85,7 @@
                         class="form-control wefield"
                         >
                     </textarea>
-                    <div class="container text-center mt-2" id="webtn">
-                        <button class="btn btn-primary btn-sm" onclick="addNew()">Add</button>
-                    </div>
+                    
                 </div>
 
                 <div class="form-group mt-2" id="we">
@@ -79,9 +96,7 @@
                         class="form-control wefield"
                        >
                     </textarea>
-                    <div class="container text-center mt-2 " id="webtn">
-                        <button class="btn btn-primary btn-sm" onclick="addEducation()">Add</button>
-                    </div>
+                   
                 </div>
                 <div class="form-group mt-2">
                     <label for="certificationsField">Certifications</label>
@@ -91,9 +106,7 @@
                         class="form-control"
                      >
                     </textarea>
-                    <div class="container text-center mt-2" id="webtn">
-                        <button class="btn btn-primary btn-sm" onclick="addCertifications()">Add</button>
-                    </div>
+                   
                 </div>
             
                 <div class="form-group mt-2">
@@ -104,9 +117,7 @@
                         class="form-control"
                         >
                     </textarea>
-                    <div class="container text-center mt-2" id="webtn">
-                        <button class="btn btn-primary btn-sm" onclick="addSkills()">Add</button>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -171,6 +182,50 @@
             <button onclick="printCV()" class="btn btn-primary btn-lg" id="print">Print CV</button>
         </div>
     </div>
+
+
+
+
+
+
+
+
+      <!-- footer -->
+
+<div class="footer" id="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Job Seekers</h2>
+            <ul>
+                <li><a href="#">Create a Resume</a></li>
+                <li><a href="#">Resume Templates</a></li>
+                <li><a href="#">How to Write a Resume</a></li>
+                <li><a href="#">Cover Letter Builder</a></li>
+                <li><a href="#">Cover Letter Templates</a></li>
+                <li><a href="#">Cover Letter Examples</a></li>
+                <li><a href="#">CV Examples</a></li>
+            </ul>
+        </div>
+        <div class="footer-section ">
+            <h2>Our Company</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+   </div>
+   <div class="footer-bottom mt-5">
+    &copy; resumebuilder.com | Designed by Mausumi Ghadei/Kriti
+</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js" integrity="sha512-QmHfFem9aVqq2m/DUS9cJqmbNQa5jI4wfrZ3fS5vF98b9K5s9kBCP+TCdUscwRKZ/QV1w6Ea8m/7Fc9IMxY23g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="resume.js"></script>
 </body>

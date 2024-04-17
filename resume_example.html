@@ -10,9 +10,96 @@
     padding:0px;
     box-sizing: border-box;
     font-family: "Jost", sans-serif;
-    background-color: rgba(220, 246, 246, 0.721);
+    background-color:black;
     text-align: center;
 }
+/* nav start */
+nav {
+height: 80px;
+width: 100%;
+background: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+
+label.logo {
+font-size: 30px;
+font-weight: bold;
+color: rgb(48, 215, 18);
+line-height: 40px;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+margin: 0 8px;
+}
+
+nav a {
+color:  rgb(48, 215, 18);
+text-decoration: none;
+font-size: 15px;
+text-transform: uppercase;
+padding: 7px 10px;
+border-radius: 3px;
+}
+
+a.active, a:hover {
+background-color:  rgb(48, 215, 18);
+color: white;
+transition: 0.5s;
+}
+
+nav #icon {
+color: white;
+font-size: 30px;
+cursor: pointer;
+display: none;
+} 
+@media (max-width: 909px) {
+nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: #2f3640;
+    padding: 20px 0;
+    transition:all .5s;
+    text-align: center;
+}
+
+nav ul.show {
+    display: flex;
+    left: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav #icon {
+    display: block;
+}
+  nav a{
+font-size: 20px;
+}
+a.active,a:hover{
+border:none;
+color:#3498db;
+} 
+}
+/* nav end */
+
+
         /* circles */
 .circles{
 display: flex;
@@ -20,7 +107,8 @@ justify-content: center;
 flex-wrap: wrap;
 }
 .circles .c1{
-    background-color: antiquewhite;
+    background-color: rgb(18, 100, 215);
+    color:white;
     border-radius: 100%;
     height: 300px;
     width: 300px;
@@ -42,15 +130,92 @@ flex-wrap: wrap;
 
 }
 .rect .r1{
-    background-color: antiquewhite;
+    background-color: rgb(38, 215, 18);
+    color:white;
     padding: 0px 10px 0px 10px;
     width: 400px;
     flex-wrap: wrap;
     margin: 2px;
 }
+
+
+
+
+/* footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 8%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-section {
+    width: 30%;
+    margin-left: 20%;
+}
+
+.footer-section h2 {
+    color:rgb(38, 215, 18);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ccc;
+    
+}
+
+
+  
+  
+  
     </style>
 </head>
 <body>
+    <nav>
+        <label class="logo"><i class="fas fa-file-alt"></i> Resume Builder</label>
+        <ul>
+            
+            <li><a  href="index.html">Home</a></li>
+            <li><a  href="example.html">Resume Template</a></li>
+            <li><a class="active" href="resume_example.html">About</a></li>
+            <li><a href="upload.html">Resume Scores</a></li>
+            <li><a href="template/index.html">Resume Builder</a></li>
+            <li><a href="resume.html">Create My Resume</a></li>
+            <li><a href="login.html">Log In/Sign Up</a></li>
+            
+        </ul>
+        <label id="icon"><i class="fas fa-bars"></i></label>
+    </nav> 
+
+
     <section>
         <h1>Best Practices to get Interview calls</h1>
         <div class="circles">
@@ -70,5 +235,43 @@ flex-wrap: wrap;
             <div class="r1"><h3>427,000 resumes are posted each week on Monster</h3></div>
         </div>
     </section>
+
+
+    <!-- footer -->
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Job Seekers</h2>
+            <ul>
+                <li><a href="#">Create a Resume</a></li>
+                <li><a href="#">Resume Templates</a></li>
+                <li><a href="#">How to Write a Resume</a></li>
+                <li><a href="#">Cover Letter Builder</a></li>
+                <li><a href="#">Cover Letter Templates</a></li>
+                <li><a href="#">Cover Letter Examples</a></li>
+                <li><a href="#">CV Examples</a></li>
+            </ul>
+        </div>
+        <div class="footer-section ">
+            <h2>Our Company</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+   </div>
+   <div class="footer-bottom mt-5">
+    &copy; resumebuilder.com | Designed by Mausumi Ghadei/Kriti
+</div>
+
 </body>
 </html>

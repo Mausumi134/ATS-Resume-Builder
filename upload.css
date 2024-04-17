@@ -7,48 +7,48 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    }
-    
-    label.logo {
+}
+
+label.logo {
     font-size: 30px;
     font-weight: bold;
     color: rgb(48, 215, 18);
     line-height: 40px;
-    }
-    
-    nav ul {
+}
+
+nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    }
-    
-    nav li {
+}
+
+nav li {
     margin: 0 8px;
-    }
-    
-    nav a {
+}
+
+nav a {
     color:  rgb(48, 215, 18);
     text-decoration: none;
     font-size: 15px;
     text-transform: uppercase;
     padding: 7px 10px;
     border-radius: 3px;
-    }
-    
-    a.active, a:hover {
+}
+
+a.active, a:hover {
     background-color:  rgb(48, 215, 18);
     color: white;
     transition: 0.5s;
-    }
-    
-    nav #icon {
+}
+
+nav #icon {
     color: white;
     font-size: 30px;
     cursor: pointer;
     display: none;
-    } 
-    @media (max-width: 909px) {
+} 
+@media (max-width: 909px) {
     nav ul {
         display: flex;
         flex-direction: column;
@@ -75,66 +75,85 @@ nav {
         display: block;
     }
       nav a{
-    font-size: 20px;
-    }
+font-size: 20px;
+}
     a.active,a:hover{
     border:none;
     color:#3498db;
-    } 
-    }
-    /* nav end */
+} 
+}
 
 
+/* top nav end */
 
 
-
-
-
-
-
-/* resume.css */
-
-.header {
+h {
+    color: white;
+    font-size: 40px;
+    margin-left: 33%;
+   
     text-align: center;
+    font-family: Arial, sans-serif; /* Add your preferred font family here */
 }
+.p{
+    color: white;
+   
 
-#nameT {
-    color: #333;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
+   
+    text-align: center;
+    font-family: Arial, sans-serif;   
 }
-
-#emailT, #phoneT, #addressT {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 5px;
+body{
+    font-family: montserrat;
+    background-color: #000;
 }
+.flex-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    background-color:white;
+    margin: 20px;
+    padding: 20px;
+    height: 400px;
+    width: 300px;
+    margin-top: 5%;
+  }
+  .btn {
+    
+    background-color:  rgb(48, 215, 18);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 400px;
+    height: 50px;
+  }
 
-#linkT, #gitT {
-    color: #007bff;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
+  .btn:hover {
+    background-color: white; 
+    color:  rgb(48, 215, 18);
+  }
 
-.summary h2, .projects h2, .education h2, .certifications h2, .skills h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
-#summaryT, #projectT, #educationT, #certificationsT, #skillsT {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
 
+ 
+  
 /* footer */
 .footer {
     background-color: #333;
     color: #fff;
     padding: 50px 0;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 .footer-content {
@@ -151,7 +170,7 @@ nav {
 .footer-section h2 {
     color:rgb(38, 215, 18);
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .footer-section ul {
@@ -180,3 +199,7 @@ nav {
     
 }
 
+
+  
+  
+  

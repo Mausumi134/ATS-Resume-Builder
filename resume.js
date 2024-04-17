@@ -1,14 +1,3 @@
-function addNew() {
-    let newTextArea = document.createElement('textarea');
-    newTextArea.placeholder = "Enter here";
-    newTextArea.classList.add('form-control');
-    newTextArea.classList.add('weField');
-    newTextArea.classList.add('mt-2');
-    let weContainer = document.getElementById('we');
-    let addBtnContainer = document.getElementById('webtn');
-    
-    weContainer.insertBefore(newTextArea, addBtnContainer);
-}
 
 // generating cv
 
@@ -34,6 +23,8 @@ function printCV() {
     // Hide the CV form
     document.getElementById('cv-form').style.display = 'none';
      document.getElementById('print').style.display = 'none';
+     document.getElementById('nav').style.display = 'none';
+     document.getElementById('footer').style.display = 'none';
     // Display the CV template
     document.getElementById('cv-template').style.display = 'block';
     // Print the CV

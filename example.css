@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+/* nav start */
+nav {
+height: 80px;
+width: 100%;
+background: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+
+label.logo {
+font-size: 30px;
+font-weight: bold;
+color: rgb(48, 215, 18);
+line-height: 40px;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+margin: 0 8px;
+}
+
+nav a {
+color:  rgb(48, 215, 18);
+text-decoration: none;
+font-size: 15px;
+text-transform: uppercase;
+padding: 7px 10px;
+border-radius: 3px;
+}
+
+a.active, a:hover {
+background-color:  rgb(48, 215, 18);
+color: white;
+transition: 0.5s;
+}
+
+nav #icon {
+color: white;
+font-size: 30px;
+cursor: pointer;
+display: none;
+} 
+@media (max-width: 909px) {
+nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: #2f3640;
+    padding: 20px 0;
+    transition:all .5s;
+    text-align: center;
+}
+
+nav ul.show {
+    display: flex;
+    left: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav #icon {
+    display: block;
+}
+  nav a{
+font-size: 20px;
+}
+a.active,a:hover{
+border:none;
+color:#3498db;
+} 
+}
+/* nav end */
+
+.container {
+    display: flex;
+    border: 2px solid black;
+    margin-top: 2%;
+}
+
+.box {
+    flex: 1;
+    margin: 15px;
+    padding: 40px;
+    border: 2px solid #ccc;
+    height: 500px;
+}
+/* button */
+.select-button {
+   
+    width: 100px;
+    margin-top: 5%;
+    height: 40px;
+    background-color: rgb(38, 215, 18);
+    color: white;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-button:hover {
+    background-color: rgb(30, 179, 15);
+}
+/* footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 8%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-section {
+    width: 30%;
+    margin-left: 20%;
+}
+
+.footer-section h2 {
+    color:rgb(38, 215, 18);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ccc;
+    
+}
+
+
+  
+  
+  
